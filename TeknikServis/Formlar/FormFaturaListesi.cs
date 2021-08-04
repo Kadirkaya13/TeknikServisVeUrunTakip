@@ -88,5 +88,15 @@ namespace TeknikServis.Formlar
                 MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtSeri.Text = "";
+            txtSiraNo.Text = "";
+            txtSaat.Text = "";
+            txtTarih.Text = "";
+            txtVergiDairesi.Text = "";
+        }
     }
 }

@@ -86,6 +86,7 @@ namespace TeknikServis.Formlar
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -279,7 +280,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtTelefon.Location = new System.Drawing.Point(239, 269);
             this.txtTelefon.Name = "txtTelefon";
-            
             this.txtTelefon.Size = new System.Drawing.Size(338, 40);
             this.txtTelefon.TabIndex = 10;
             // 
@@ -337,6 +337,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton3);
             this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -617,6 +618,16 @@ namespace TeknikServis.Formlar
             this.labelControl31.TabIndex = 1;
             this.labelControl31.Text = "Ad Soyad :";
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(20, 583);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(194, 44);
+            this.simpleButton3.TabIndex = 41;
+            this.simpleButton3.Text = "Temizle";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // FormPersonelListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -715,5 +726,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

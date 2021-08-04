@@ -42,9 +42,11 @@ namespace TeknikServis.Formlar
             this.lblArizaliUrunToplam = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.lblTadilatiTamamlanmisToplam = new DevExpress.XtraEditors.LabelControl();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.lblParcaBekleyenUrunToplam = new DevExpress.XtraEditors.LabelControl();
             this.lblEnYuksekFiyatli = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -54,21 +56,21 @@ namespace TeknikServis.Formlar
             this.lblArizaliKasa = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.lblToplamUrun = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblEnFazlaArizaliUruneSahipMarka = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
@@ -78,10 +80,8 @@ namespace TeknikServis.Formlar
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -188,6 +188,19 @@ namespace TeknikServis.Formlar
             this.panel7.Size = new System.Drawing.Size(401, 253);
             this.panel7.TabIndex = 15;
             // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(274, 121);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(70, 70);
+            this.pictureEdit3.TabIndex = 8;
+            // 
             // lblTadilatiTamamlanmisToplam
             // 
             this.lblTadilatiTamamlanmisToplam.Appearance.Font = new System.Drawing.Font("Oswald", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -224,6 +237,19 @@ namespace TeknikServis.Formlar
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(401, 253);
             this.panel8.TabIndex = 16;
+            // 
+            // pictureEdit5
+            // 
+            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
+            this.pictureEdit5.Location = new System.Drawing.Point(261, 121);
+            this.pictureEdit5.Name = "pictureEdit5";
+            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit5.Size = new System.Drawing.Size(70, 70);
+            this.pictureEdit5.TabIndex = 9;
             // 
             // lblParcaBekleyenUrunToplam
             // 
@@ -265,10 +291,11 @@ namespace TeknikServis.Formlar
             // 
             this.chartControl1.BorderOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(80)))), ((int)(((byte)(77)))));
             this.chartControl1.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            simpleDiagram3D1.RotationMatrixSerializable = "-0.899176586570766;0.158619652219317;-0.40782505084016;0;-0.433449861265827;-0.45" +
-    "0697978589414;0.780379747215464;0;-0.0600223619294686;0.878470909037551;0.474010" +
-    "736210868;0;0;0;0;1";
+            simpleDiagram3D1.RotationMatrixSerializable = "-0.83168458734339;0.250262960464789;-0.495650277710873;0;-0.526049568114359;-0.64" +
+    "0810605982246;0.559136494200999;0;-0.177686800472526;0.725761818973752;0.6646030" +
+    "26669132;0;0;0;0;1";
             this.chartControl1.Diagram = simpleDiagram3D1;
+            this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(4, 126);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Civic";
@@ -340,6 +367,19 @@ namespace TeknikServis.Formlar
             this.panel3.Size = new System.Drawing.Size(401, 253);
             this.panel3.TabIndex = 19;
             // 
+            // pictureEdit4
+            // 
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
+            this.pictureEdit4.Location = new System.Drawing.Point(273, 128);
+            this.pictureEdit4.Name = "pictureEdit4";
+            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit4.Size = new System.Drawing.Size(70, 70);
+            this.pictureEdit4.TabIndex = 8;
+            // 
             // lblToplamUrun
             // 
             this.lblToplamUrun.Appearance.Font = new System.Drawing.Font("Oswald", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -399,45 +439,6 @@ namespace TeknikServis.Formlar
             this.labelControl8.TabIndex = 1;
             this.labelControl8.Text = "En Fazla Arızalı Ürüne \r\nSahip Marka";
             // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(274, 121);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(70, 70);
-            this.pictureEdit3.TabIndex = 8;
-            // 
-            // pictureEdit4
-            // 
-            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(273, 128);
-            this.pictureEdit4.Name = "pictureEdit4";
-            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(70, 70);
-            this.pictureEdit4.TabIndex = 8;
-            // 
-            // pictureEdit5
-            // 
-            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(261, 121);
-            this.pictureEdit5.Name = "pictureEdit5";
-            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit5.Size = new System.Drawing.Size(70, 70);
-            this.pictureEdit5.TabIndex = 9;
-            // 
             // FormArizaliUrunListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -462,8 +463,10 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -476,11 +479,9 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

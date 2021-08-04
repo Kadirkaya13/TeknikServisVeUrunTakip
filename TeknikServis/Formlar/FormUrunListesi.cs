@@ -132,5 +132,15 @@ namespace TeknikServis.formlar
         {
 
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            txtUrunId.Text = "";
+            txtUrunAd.Text = "";
+            txtUrunMarka.Text = "";
+            txtUrunAlısFiyat.Text = "";
+            txtUrunSatisFiyat.Text = "";
+            txtUrunStok.Text = "";
+        }
     }
 }

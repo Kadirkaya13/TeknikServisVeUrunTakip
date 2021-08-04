@@ -50,6 +50,7 @@ namespace TeknikServis.Formlar
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
@@ -214,6 +215,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.txtFaturaId);
             this.groupControl1.Controls.Add(this.labelControl5);
@@ -242,10 +244,20 @@ namespace TeknikServis.Formlar
             // 
             this.simpleButton1.Location = new System.Drawing.Point(496, 426);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(150, 46);
+            this.simpleButton1.Size = new System.Drawing.Size(138, 46);
             this.simpleButton1.TabIndex = 30;
             this.simpleButton1.Text = "Tutarı göster";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(496, 607);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(138, 62);
+            this.simpleButton2.TabIndex = 38;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormFaturaKalem
             // 
@@ -294,5 +306,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

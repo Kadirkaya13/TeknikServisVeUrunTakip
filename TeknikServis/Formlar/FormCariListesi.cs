@@ -143,5 +143,21 @@ namespace TeknikServis.Formlar
                 MessageBox.Show("Ürün başarı ile Güncellendi !", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            txtCariId.Text = "";
+            txtCariAd.Text = "";
+            txtCariSoyad.Text = "";
+            txtTelefon.Text = "";
+            txtMail.Text = "";
+            txtAdres.Text = "";
+            txtIl.Text = "";
+            txtIlce.Text = "";
+            txtBanka.Text = "";
+            txtVergiDairesi.Text = "";
+            txtVergiNo.Text = "";
+            txtStatu.Text = "";
+        }
     }
 }

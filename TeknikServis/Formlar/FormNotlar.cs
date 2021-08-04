@@ -100,5 +100,12 @@ namespace TeknikServis.Formlar
             txtBaslik.Text = gridView2.GetFocusedRowCellValue("Baslik").ToString();
             txtIcerik.Text = gridView2.GetFocusedRowCellValue("Icerik").ToString();
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtBaslik.Text = "";
+            txtIcerik.Text = "";
+        }
     }
 }

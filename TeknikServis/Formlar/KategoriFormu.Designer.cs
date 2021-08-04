@@ -60,6 +60,7 @@ namespace TeknikServis.Formlar
             this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtKategoriId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -167,6 +168,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton3);
             this.groupControl1.Controls.Add(this.pictureEdit1);
             this.groupControl1.Controls.Add(this.txtKategoriId);
             this.groupControl1.Controls.Add(this.labelControl7);
@@ -393,6 +395,16 @@ namespace TeknikServis.Formlar
             this.groupControl11.TabIndex = 7;
             this.groupControl11.Text = "groupControl11";
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(12, 556);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(139, 65);
+            this.simpleButton3.TabIndex = 43;
+            this.simpleButton3.Text = "Temizle";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // KategoriFormu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -481,5 +493,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.GroupControl groupControl10;
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
         private DevExpress.XtraEditors.GroupControl groupControl11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

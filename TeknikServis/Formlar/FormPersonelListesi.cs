@@ -161,5 +161,14 @@ namespace TeknikServis.Formlar
 
             }
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            txtPersonelId.Text = "";
+            txtPersonelAd.Text = "";
+            txtPersonelSoyad.Text = "";
+            txtTelefon.Text = "";
+            txtMail.Text = "";
+        }
     }
 }

@@ -115,5 +115,11 @@ namespace TeknikServis.Formlar
             txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
             txtKategoriAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            txtKategoriId.Text = "";
+            txtKategoriAd.Text = "";
+        }
     }
 }

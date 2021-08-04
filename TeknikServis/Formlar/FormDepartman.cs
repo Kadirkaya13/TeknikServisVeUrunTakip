@@ -98,5 +98,11 @@ namespace TeknikServis.Formlar
         {
 
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            txtDepartmanId.Text = "";
+            txtDepartmanAd.Text = "";
+        }
     }
 }

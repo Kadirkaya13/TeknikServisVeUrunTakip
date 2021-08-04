@@ -96,5 +96,15 @@ namespace TeknikServis.Formlar
             txtTutar.Text = toplam.ToString();
 
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtFaturaId.Text = "";
+            txtUrun.Text = "";
+            txtAdet.Text = "";
+            txtFiyat.Text = "";
+            txtTutar.Text = "";
+        }
     }
 }

@@ -51,6 +51,7 @@ namespace TeknikServis.formlar
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -88,6 +89,7 @@ namespace TeknikServis.formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton3);
             this.groupControl1.Controls.Add(this.txtUrunId);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.simpleButton1);
@@ -264,6 +266,16 @@ namespace TeknikServis.formlar
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Ürün Adı :";
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(16, 635);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(139, 65);
+            this.simpleButton3.TabIndex = 42;
+            this.simpleButton3.Text = "Temizle";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // FormUrunListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -315,5 +327,6 @@ namespace TeknikServis.formlar
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtUrunAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

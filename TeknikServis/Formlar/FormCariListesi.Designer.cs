@@ -77,6 +77,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.lblEnFazlaCariliIl = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtCariId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).BeginInit();
@@ -258,6 +259,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.txtIlce);
             this.groupControl1.Controls.Add(this.txtIl);
             this.groupControl1.Controls.Add(this.txtStatu);
@@ -578,6 +580,16 @@ namespace TeknikServis.Formlar
             this.labelControl19.TabIndex = 1;
             this.labelControl19.Text = "En Fazla Cari\r\n Bulunan İl";
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(35, 893);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(150, 46);
+            this.simpleButton2.TabIndex = 36;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
             // FormCariListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -675,5 +687,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.TextEdit txtIlce;
         private DevExpress.XtraEditors.TextEdit txtIl;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

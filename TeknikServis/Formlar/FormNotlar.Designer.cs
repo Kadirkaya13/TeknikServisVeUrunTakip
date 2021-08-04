@@ -53,6 +53,7 @@ namespace TeknikServis.Formlar
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -176,6 +177,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.pictureEdit1);
             this.groupControl1.Controls.Add(this.checkEdit1);
             this.groupControl1.Controls.Add(this.txtId);
@@ -264,6 +266,16 @@ namespace TeknikServis.Formlar
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView2_FocusedRowChanged);
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(31, 600);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(152, 44);
+            this.simpleButton2.TabIndex = 40;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
             // FormNotlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -319,5 +331,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

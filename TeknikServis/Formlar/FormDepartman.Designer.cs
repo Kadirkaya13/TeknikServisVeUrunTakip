@@ -59,6 +59,7 @@ namespace TeknikServis.Formlar
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -367,6 +368,7 @@ namespace TeknikServis.Formlar
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.txtDepartmanId);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.btnListele);
@@ -400,6 +402,16 @@ namespace TeknikServis.Formlar
             this.pictureEdit4.Size = new System.Drawing.Size(646, 544);
             this.pictureEdit4.TabIndex = 0;
             this.pictureEdit4.EditValueChanged += new System.EventHandler(this.pictureEdit4_EditValueChanged);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(32, 286);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(161, 62);
+            this.simpleButton2.TabIndex = 37;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormDepartman
             // 
@@ -471,5 +483,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.Panel panel5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }
