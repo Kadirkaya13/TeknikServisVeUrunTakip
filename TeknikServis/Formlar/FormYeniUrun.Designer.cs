@@ -53,6 +53,7 @@ namespace TeknikServis.Formlar
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).BeginInit();
@@ -73,6 +74,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -296,7 +298,7 @@ namespace TeknikServis.Formlar
             // textEdit7
             // 
             this.textEdit7.EditValue = "ÜRÜN EKLEME PANELİ";
-            this.textEdit7.Location = new System.Drawing.Point(174, 51);
+            this.textEdit7.Location = new System.Drawing.Point(158, 64);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -337,6 +339,21 @@ namespace TeknikServis.Formlar
             this.labelControl1.TabIndex = 21;
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
+            // pictureEdit15
+            // 
+            this.pictureEdit15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
+            this.pictureEdit15.Location = new System.Drawing.Point(469, 7);
+            this.pictureEdit15.Name = "pictureEdit15";
+            this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit15.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit15.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit15.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit15.Size = new System.Drawing.Size(68, 70);
+            this.pictureEdit15.TabIndex = 68;
+            this.pictureEdit15.Click += new System.EventHandler(this.pictureEdit15_Click);
+            // 
             // FormYeniUrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -344,6 +361,7 @@ namespace TeknikServis.Formlar
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(544, 1106);
+            this.Controls.Add(this.pictureEdit15);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.btnKaydet);
@@ -393,6 +411,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,5 +442,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.SimpleButton btnVazgec;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit15;
     }
 }

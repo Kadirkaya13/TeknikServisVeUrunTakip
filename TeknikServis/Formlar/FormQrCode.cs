@@ -30,5 +30,10 @@ namespace TeknikServis.Formlar
                 MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void pictureEdit15_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -55,5 +55,10 @@ namespace TeknikServis.Formlar
         {
             this.Close();
         }
+
+        private void pictureEdit15_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

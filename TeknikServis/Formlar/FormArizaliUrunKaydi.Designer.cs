@@ -48,6 +48,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.btnGetir = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
@@ -62,6 +63,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl7
@@ -83,7 +85,6 @@ namespace TeknikServis.Formlar
             this.txtUrunSeriNo.Properties.Appearance.Options.UseBackColor = true;
             this.txtUrunSeriNo.Properties.Appearance.Options.UseForeColor = true;
             this.txtUrunSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            
             this.txtUrunSeriNo.Size = new System.Drawing.Size(238, 36);
             this.txtUrunSeriNo.TabIndex = 72;
             // 
@@ -265,6 +266,21 @@ namespace TeknikServis.Formlar
             this.labelControl1.Size = new System.Drawing.Size(0, 25);
             this.labelControl1.TabIndex = 70;
             // 
+            // pictureEdit15
+            // 
+            this.pictureEdit15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
+            this.pictureEdit15.Location = new System.Drawing.Point(536, 10);
+            this.pictureEdit15.Name = "pictureEdit15";
+            this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit15.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit15.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit15.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit15.Size = new System.Drawing.Size(68, 70);
+            this.pictureEdit15.TabIndex = 75;
+            this.pictureEdit15.Click += new System.EventHandler(this.pictureEdit15_Click);
+            // 
             // FormArizaliUrunKaydi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -272,6 +288,7 @@ namespace TeknikServis.Formlar
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(616, 754);
+            this.Controls.Add(this.pictureEdit15);
             this.Controls.Add(this.btnGetir);
             this.Controls.Add(this.panelControl7);
             this.Controls.Add(this.txtUrunSeriNo);
@@ -309,6 +326,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +352,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private System.Windows.Forms.Button btnGetir;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit15;
     }
 }

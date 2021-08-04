@@ -73,9 +73,9 @@ namespace TeknikServis.Formlar
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
@@ -602,17 +602,15 @@ namespace TeknikServis.Formlar
             this.panel1.Size = new System.Drawing.Size(837, 1062);
             this.panel1.TabIndex = 65;
             // 
-            // labelControl3
+            // pictureEdit14
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe Print", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(302, 12);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(239, 282);
-            this.labelControl3.TabIndex = 0;
-            this.labelControl3.Text = "C#";
+            this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
+            this.pictureEdit14.Location = new System.Drawing.Point(91, 349);
+            this.pictureEdit14.Name = "pictureEdit14";
+            this.pictureEdit14.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit14.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit14.Size = new System.Drawing.Size(654, 635);
+            this.pictureEdit14.TabIndex = 2;
             // 
             // labelControl4
             // 
@@ -626,15 +624,17 @@ namespace TeknikServis.Formlar
             this.labelControl4.TabIndex = 1;
             this.labelControl4.Text = "Cari ekleme Paneli\r\n";
             // 
-            // pictureEdit14
+            // labelControl3
             // 
-            this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
-            this.pictureEdit14.Location = new System.Drawing.Point(91, 349);
-            this.pictureEdit14.Name = "pictureEdit14";
-            this.pictureEdit14.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit14.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit14.Size = new System.Drawing.Size(654, 635);
-            this.pictureEdit14.TabIndex = 2;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe Print", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(302, 12);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(239, 282);
+            this.labelControl3.TabIndex = 0;
+            this.labelControl3.Text = "C#";
             // 
             // pictureEdit15
             // 
@@ -649,6 +649,7 @@ namespace TeknikServis.Formlar
             this.pictureEdit15.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit15.Size = new System.Drawing.Size(68, 70);
             this.pictureEdit15.TabIndex = 66;
+            this.pictureEdit15.EditValueChanged += new System.EventHandler(this.pictureEdit15_EditValueChanged);
             this.pictureEdit15.Click += new System.EventHandler(this.pictureEdit15_Click);
             // 
             // FormCariEkleme

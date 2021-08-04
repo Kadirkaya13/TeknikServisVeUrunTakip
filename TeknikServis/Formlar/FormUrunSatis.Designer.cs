@@ -56,6 +56,7 @@ namespace TeknikServis.Formlar
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.txtUrunSeriNo = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
@@ -79,6 +80,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -373,6 +375,21 @@ namespace TeknikServis.Formlar
             this.pictureEdit8.Size = new System.Drawing.Size(100, 78);
             this.pictureEdit8.TabIndex = 45;
             // 
+            // pictureEdit15
+            // 
+            this.pictureEdit15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
+            this.pictureEdit15.Location = new System.Drawing.Point(468, 8);
+            this.pictureEdit15.Name = "pictureEdit15";
+            this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit15.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit15.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit15.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit15.Size = new System.Drawing.Size(68, 70);
+            this.pictureEdit15.TabIndex = 69;
+            this.pictureEdit15.Click += new System.EventHandler(this.pictureEdit15_Click);
+            // 
             // FormUrunSatis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -380,6 +397,7 @@ namespace TeknikServis.Formlar
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(544, 1183);
+            this.Controls.Add(this.pictureEdit15);
             this.Controls.Add(this.panelControl7);
             this.Controls.Add(this.txtUrunSeriNo);
             this.Controls.Add(this.pictureEdit8);
@@ -434,6 +452,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrunSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +486,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PanelControl panelControl7;
         private DevExpress.XtraEditors.TextEdit txtUrunSeriNo;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit15;
     }
 }
