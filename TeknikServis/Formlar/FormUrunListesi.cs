@@ -38,11 +38,12 @@ namespace TeknikServis.formlar
             //var degerler = db.Urun.ToList();
             txtUrunId.Enabled = false;
             UrunListesi();
-            lookUpEdit1.Properties.DataSource = (from x in db.Kategori select new 
-            {
-                x.Id,
-                x.Ad
-            }).ToList();
+            lookUpEdit1.Properties.DataSource = (from x in db.Kategori
+                                                 select new
+                                                 {
+                                                     x.Id,
+                                                     x.Ad
+                                                 }).ToList();
         }
 
         private void labelControl6_Click(object sender, EventArgs e)
@@ -57,17 +58,24 @@ namespace TeknikServis.formlar
 
         private void btnUrunKaydet_Click(object sender, EventArgs e)
         {
-            Urun urun = new Urun();
-            urun.Ad = txtUrunAd.Text;
-            urun.Marka = txtUrunMarka.Text;
-            urun.AlisFiyat = Convert.ToDecimal( txtUrunAlısFiyat.Text);
-            urun.SatisFiyat = Convert.ToDecimal( txtUrunSatisFiyat.Text);
-            urun.Stok = Convert.ToInt16(txtUrunStok.Text);
-            urun.Durum = false;
-            urun.Kategori = byte.Parse(lookUpEdit1.EditValue.ToString());
-            db.Urun.Add(urun);
-            db.SaveChanges();
-            MessageBox.Show("Ürün Başarı ile eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (txtUrunAd.Text != "" && txtUrunMarka.Text != "" && txtUrunAlısFiyat.Text != "" && txtUrunSatisFiyat.Text != "" && txtUrunStok.Text != "")
+            {
+                Urun urun = new Urun();
+                urun.Ad = txtUrunAd.Text;
+                urun.Marka = txtUrunMarka.Text;
+                urun.AlisFiyat = Convert.ToDecimal(txtUrunAlısFiyat.Text);
+                urun.SatisFiyat = Convert.ToDecimal(txtUrunSatisFiyat.Text);
+                urun.Stok = Convert.ToInt16(txtUrunStok.Text);
+                urun.Durum = false;
+                urun.Kategori = byte.Parse(lookUpEdit1.EditValue.ToString());
+                db.Urun.Add(urun);
+                db.SaveChanges();
+                MessageBox.Show("Ürün Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -83,29 +91,29 @@ namespace TeknikServis.formlar
             txtUrunAlısFiyat.Text = gridView1.GetFocusedRowCellValue("AlisFiyat").ToString();
             txtUrunSatisFiyat.Text = gridView1.GetFocusedRowCellValue("SatisFiyat").ToString();
             txtUrunStok.Text = gridView1.GetFocusedRowCellValue("Stok").ToString();
-                    
+
         }
 
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
             DialogResult dr = new DialogResult();
-            dr =MessageBox.Show("Ürünü Silmek istediğinize emin misiniz ?", "Uyarı !", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            dr = MessageBox.Show("Ürünü Silmek istediğinize emin misiniz ?", "Uyarı !", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
 
-            if (dr == DialogResult.Yes )
+            if (dr == DialogResult.Yes)
             {
                 int id = int.Parse(txtUrunId.Text);
                 var deger = db.Urun.Find(id);
                 db.Urun.Remove(deger);
                 db.SaveChanges();
-                MessageBox.Show("Ürün başarı ile silindi !","Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+                MessageBox.Show("Ürün başarı ile silindi !", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
         private void btnUrunGuncelle_Click(object sender, EventArgs e)
         {
             DialogResult dr = new DialogResult();
-            dr =MessageBox.Show("Güncellemeyi onaylıyor musunuz ?","UYARI !",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Question);
-            if (dr==DialogResult.Yes)
+            dr = MessageBox.Show("Güncellemeyi onaylıyor musunuz ?", "UYARI !", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
             {
                 int id = int.Parse(txtUrunId.Text);
                 var deger = db.Urun.Find(id);

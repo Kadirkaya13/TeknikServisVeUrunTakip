@@ -26,21 +26,29 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            Cariler cari = new Cariler();
-            cari.Ad = txtAd.Text;
-            cari.Soyad = txtSoyad.Text;
-            cari.Telefon = txtTelefon.Text;
-            cari.Mail = txtMail.Text;
-            cari.Adres =txtAdres.Text;
-            cari.Il = txtIl.Text;
-            cari.Ilce = txtIlce.Text;
-            cari.Banka = txtBanka.Text;
-            cari.VergiAdresi = txtVergiDairesi.Text;
-            cari.VergiNo = txtVergiNo.Text;
-            cari.Statu = txtStatu.Text;
-            db.Cariler.Add(cari);
-            db.SaveChanges();
-            MessageBox.Show("Cari Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtAd.Text!=""&& txtSoyad.Text!=""&& txtMail.Text!=""&& txtVergiNo.Text!="")
+            {
+                Cariler cari = new Cariler();
+                cari.Ad = txtAd.Text;
+                cari.Soyad = txtSoyad.Text;
+                cari.Telefon = txtTelefon.Text;
+                cari.Mail = txtMail.Text;
+                cari.Adres = txtAdres.Text;
+                cari.Il = txtIl.Text;
+                cari.Ilce = txtIlce.Text;
+                cari.Banka = txtBanka.Text;
+                cari.VergiAdresi = txtVergiDairesi.Text;
+                cari.VergiNo = txtVergiNo.Text;
+                cari.Statu = txtStatu.Text;
+                db.Cariler.Add(cari);
+                db.SaveChanges();
+                MessageBox.Show("Cari Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void pictureEdit15_Click(object sender, EventArgs e)

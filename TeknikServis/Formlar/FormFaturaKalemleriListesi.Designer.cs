@@ -88,9 +88,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtFaturaId.Location = new System.Drawing.Point(171, 67);
             this.txtFaturaId.Name = "txtFaturaId";
-            this.txtFaturaId.Properties.BeepOnError = false;
-            this.txtFaturaId.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtFaturaId.Properties.MaskSettings.Set("mask", ".");
             this.txtFaturaId.Size = new System.Drawing.Size(338, 40);
             this.txtFaturaId.TabIndex = 1;
             // 
@@ -118,10 +115,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtSiraNo.Location = new System.Drawing.Point(1123, 67);
             this.txtSiraNo.Name = "txtSiraNo";
-            this.txtSiraNo.Properties.BeepOnError = false;
-            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtSiraNo.Properties.MaskSettings.Set("mask", "100000");
-            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtSiraNo.Size = new System.Drawing.Size(338, 40);
             this.txtSiraNo.TabIndex = 3;
             // 
@@ -139,9 +132,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtSeri.Location = new System.Drawing.Point(620, 67);
             this.txtSeri.Name = "txtSeri";
-            this.txtSeri.Properties.BeepOnError = false;
-            this.txtSeri.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtSeri.Properties.MaskSettings.Set("mask", ".");
             this.txtSeri.Size = new System.Drawing.Size(338, 40);
             this.txtSeri.TabIndex = 2;
             // 

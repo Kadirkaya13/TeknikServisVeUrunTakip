@@ -82,11 +82,8 @@ namespace TeknikServis.Formlar
             this.txtUrunSeriNo.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.txtUrunSeriNo.Properties.Appearance.Options.UseBackColor = true;
             this.txtUrunSeriNo.Properties.Appearance.Options.UseForeColor = true;
-            this.txtUrunSeriNo.Properties.BeepOnError = false;
             this.txtUrunSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtUrunSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtUrunSeriNo.Properties.MaskSettings.Set("mask", ".....");
-            this.txtUrunSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            
             this.txtUrunSeriNo.Size = new System.Drawing.Size(238, 36);
             this.txtUrunSeriNo.TabIndex = 72;
             // 
@@ -167,10 +164,7 @@ namespace TeknikServis.Formlar
             this.txtTarih.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.txtTarih.Properties.Appearance.Options.UseBackColor = true;
             this.txtTarih.Properties.Appearance.Options.UseForeColor = true;
-            this.txtTarih.Properties.BeepOnError = false;
             this.txtTarih.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
             this.txtTarih.Size = new System.Drawing.Size(238, 36);
             this.txtTarih.TabIndex = 59;
             // 

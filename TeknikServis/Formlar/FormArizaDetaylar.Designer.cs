@@ -90,10 +90,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtSeriNo.Location = new System.Drawing.Point(104, 209);
             this.txtSeriNo.Name = "txtSeriNo";
-            this.txtSeriNo.Properties.BeepOnError = false;
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.txtSeriNo.Properties.MaskSettings.Set("mask", ".....");
+            
             this.txtSeriNo.Size = new System.Drawing.Size(330, 40);
             this.txtSeriNo.TabIndex = 44;
             // 
@@ -113,9 +110,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtTarih.Location = new System.Drawing.Point(104, 323);
             this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.BeepOnError = false;
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
             this.txtTarih.Size = new System.Drawing.Size(330, 40);
             this.txtTarih.TabIndex = 46;
             // 

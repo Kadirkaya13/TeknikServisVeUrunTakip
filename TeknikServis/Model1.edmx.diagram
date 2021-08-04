@@ -30,6 +30,9 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_UrunHareket_Urun" ManuallyRouted="false" />
         <AssociationConnector Association="DbTeknikServisModel.FK_UrunHareket_Cariler1" />
         <AssociationConnector Association="DbTeknikServisModel.FK_FaturaDetay_FaturaBilgi1" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.Araçlar" Width="1.5" PointX="7.125" PointY="13.75" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.Hakkimizda" Width="1.5" PointX="9.75" PointY="12.5" />
+        <EntityTypeShape EntityType="DbTeknikServisModel.Iletisim" Width="1.5" PointX="9.625" PointY="14.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

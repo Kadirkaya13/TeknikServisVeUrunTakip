@@ -12,12 +12,9 @@ namespace TeknikServis
     using System;
     using System.Collections.Generic;
     
-    public partial class Notlar
+    public partial class Hakkimizda
     {
-        public int Id { get; set; }
-        public string Baslik { get; set; }
-        public string Icerik { get; set; }
-        public Nullable<bool> Durum { get; set; }
-        public Nullable<System.DateTime> Tarih { get; set; }
+        public byte Id { get; set; }
+        public string Metin { get; set; }
     }
 }

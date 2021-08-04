@@ -32,14 +32,14 @@ namespace TeknikServis.Formlar
             KategoriListesi();
         }
 
-        
+
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
         }
 
-        
+
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
@@ -63,11 +63,18 @@ namespace TeknikServis.Formlar
 
         private void btnUrunKaydet_Click(object sender, EventArgs e)
         {
-            Kategori kategori = new Kategori();
-            kategori.Ad = txtKategoriAd.Text;
-            db.Kategori.Add(kategori);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtKategoriAd.Text != "")
+            {
+                Kategori kategori = new Kategori();
+                kategori.Ad = txtKategoriAd.Text;
+                db.Kategori.Add(kategori);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnUrunSil_Click(object sender, EventArgs e)

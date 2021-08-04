@@ -21,7 +21,14 @@ namespace TeknikServis.Formlar
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             QRCodeEncoder qR = new QRCodeEncoder();
-            pictureEdit1.Image = qR.Encode(txtSeriNo.Text);
+            if (txtSeriNo.Text != "")
+            {
+                pictureEdit1.Image = qR.Encode(txtSeriNo.Text);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

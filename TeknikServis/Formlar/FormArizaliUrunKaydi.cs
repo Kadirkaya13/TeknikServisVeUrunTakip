@@ -34,14 +34,22 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            UrunKabul urunKabul = new UrunKabul();
-            urunKabul.Cari = int.Parse(txtId.Text);
-            urunKabul.Personel = short.Parse(txtPersonel.Text);
-            urunKabul.GelisTarihi = DateTime.Parse( txtTarih.Text);
-            urunKabul.UrunSeriNo = txtUrunSeriNo.Text;
-            db.UrunKabul.Add(urunKabul);
-            db.SaveChanges();
-            MessageBox.Show("Kayıt Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtId.Text !=""&&txtPersonel.Text!=""&& txtTarih.Text!=""&& txtUrunSeriNo.Text!="")
+            {
+                UrunKabul urunKabul = new UrunKabul();
+                urunKabul.Cari = int.Parse(txtId.Text);
+                urunKabul.Personel = short.Parse(txtPersonel.Text);
+                urunKabul.GelisTarihi = DateTime.Parse(txtTarih.Text);
+                urunKabul.UrunSeriNo = txtUrunSeriNo.Text;
+                db.UrunKabul.Add(urunKabul);
+                db.SaveChanges();
+                MessageBox.Show("Kayıt Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+           
 
         }
     }

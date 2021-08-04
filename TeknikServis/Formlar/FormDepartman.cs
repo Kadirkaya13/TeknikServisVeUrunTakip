@@ -29,11 +29,19 @@ namespace TeknikServis.Formlar
         }
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            Departman departman = new Departman();
-            departman.Ad = txtDepartmanAd.Text;
-            db.Departman.Add(departman);
-            db.SaveChanges();
-            MessageBox.Show("Departman Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtDepartmanAd.Text!="")
+            {
+                Departman departman = new Departman();
+                departman.Ad = txtDepartmanAd.Text;
+                db.Departman.Add(departman);
+                db.SaveChanges();
+                MessageBox.Show("Departman Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
 
         }
 

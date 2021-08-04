@@ -71,10 +71,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtSeriNo.Location = new System.Drawing.Point(205, 95);
             this.txtSeriNo.Name = "txtSeriNo";
-            this.txtSeriNo.Properties.BeepOnError = false;
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
-            this.txtSeriNo.Properties.MaskSettings.Set("mask", ".....");
             this.txtSeriNo.Size = new System.Drawing.Size(334, 40);
             this.txtSeriNo.TabIndex = 3;
             // 

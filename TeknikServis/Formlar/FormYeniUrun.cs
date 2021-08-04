@@ -56,17 +56,24 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            Urun urun = new Urun();
-            urun.Ad = txtAd.Text;
-            urun.Marka = txtMarka.Text;
-            urun.AlisFiyat = Convert.ToDecimal(txtAlısFiyat.Text);
-            urun.SatisFiyat = Convert.ToDecimal(txtSatisFiyat.Text);
-            urun.Stok = Convert.ToInt16(txtStok.Text);
-            urun.Durum = false;
-            urun.Kategori = byte.Parse(txtKategori.Text);
-            db.Urun.Add(urun);
-            db.SaveChanges();
-            MessageBox.Show("Ürün Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtAd.Text != "" && txtMarka.Text != "" && txtAlısFiyat.Text != "" && txtSatisFiyat.Text != "" && txtStok.Text != ""&&txtKategori.Text!="")
+            {
+                Urun urun = new Urun();
+                urun.Ad = txtAd.Text;
+                urun.Marka = txtMarka.Text;
+                urun.AlisFiyat = Convert.ToDecimal(txtAlısFiyat.Text);
+                urun.SatisFiyat = Convert.ToDecimal(txtSatisFiyat.Text);
+                urun.Stok = Convert.ToInt16(txtStok.Text);
+                urun.Durum = false;
+                urun.Kategori = byte.Parse(txtKategori.Text);
+                db.Urun.Add(urun);
+                db.SaveChanges();
+                MessageBox.Show("Ürün Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

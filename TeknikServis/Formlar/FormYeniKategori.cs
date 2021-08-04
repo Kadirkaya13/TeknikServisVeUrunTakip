@@ -20,12 +20,18 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            Kategori urun = new Kategori();
-            urun.Ad = txtAd.Text;
-            
-            db.Kategori.Add(urun);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtAd.Text != "")
+            {
+                Kategori urun = new Kategori();
+                urun.Ad = txtAd.Text;
+                db.Kategori.Add(urun);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnVazgec_Click(object sender, EventArgs e)

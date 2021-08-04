@@ -63,21 +63,28 @@ namespace TeknikServis.Formlar
 
         private void btnUrunKaydet_Click(object sender, EventArgs e)
         {
-            Cariler cari = new Cariler();
-            cari.Ad = txtCariAd.Text;
-            cari.Soyad = txtCariSoyad.Text;
-            cari.Telefon = txtTelefon.Text;
-            cari.Mail = txtMail.Text;
-            cari.Adres = txtAdres.Text;
-            cari.Il = txtIl.Text;
-            cari.Ilce = txtIlce.Text;
-            cari.Banka = txtBanka.Text;
-            cari.VergiAdresi = txtVergiDairesi.Text;
-            cari.VergiNo = txtVergiNo.Text;
-            cari.Statu = txtStatu.Text;
-            db.Cariler.Add(cari);
-            db.SaveChanges();
-            MessageBox.Show("Cari Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtCariAd.Text != "" && txtCariSoyad.Text != "" && txtMail.Text != "" && txtVergiNo.Text != "")
+            {
+                Cariler cari = new Cariler();
+                cari.Ad = txtCariAd.Text;
+                cari.Soyad = txtCariSoyad.Text;
+                cari.Telefon = txtTelefon.Text;
+                cari.Mail = txtMail.Text;
+                cari.Adres = txtAdres.Text;
+                cari.Il = txtIl.Text;
+                cari.Ilce = txtIlce.Text;
+                cari.Banka = txtBanka.Text;
+                cari.VergiAdresi = txtVergiDairesi.Text;
+                cari.VergiNo = txtVergiNo.Text;
+                cari.Statu = txtStatu.Text;
+                db.Cariler.Add(cari);
+                db.SaveChanges();
+                MessageBox.Show("Cari Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnUrunSil_Click(object sender, EventArgs e)

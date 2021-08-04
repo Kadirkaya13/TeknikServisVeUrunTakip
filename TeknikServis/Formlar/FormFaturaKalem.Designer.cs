@@ -81,7 +81,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtTutar.Location = new System.Drawing.Point(146, 430);
             this.txtTutar.Name = "txtTutar";
-            this.txtTutar.Properties.BeepOnError = false;
             this.txtTutar.Size = new System.Drawing.Size(338, 40);
             this.txtTutar.TabIndex = 5;
             // 
@@ -97,7 +96,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtFiyat.Location = new System.Drawing.Point(146, 368);
             this.txtFiyat.Name = "txtFiyat";
-            this.txtFiyat.Properties.BeepOnError = false;
             this.txtFiyat.Size = new System.Drawing.Size(338, 40);
             this.txtFiyat.TabIndex = 4;
             // 
@@ -113,7 +111,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtAdet.Location = new System.Drawing.Point(146, 310);
             this.txtAdet.Name = "txtAdet";
-            this.txtAdet.Properties.BeepOnError = false;
             this.txtAdet.Size = new System.Drawing.Size(338, 40);
             this.txtAdet.TabIndex = 3;
             // 
@@ -204,7 +201,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtUrun.Location = new System.Drawing.Point(146, 252);
             this.txtUrun.Name = "txtUrun";
-            this.txtUrun.Properties.BeepOnError = false;
             this.txtUrun.Size = new System.Drawing.Size(338, 40);
             this.txtUrun.TabIndex = 2;
             // 

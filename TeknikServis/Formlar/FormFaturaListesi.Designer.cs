@@ -79,9 +79,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtSeri.Location = new System.Drawing.Point(219, 171);
             this.txtSeri.Name = "txtSeri";
-            this.txtSeri.Properties.BeepOnError = false;
-            this.txtSeri.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtSeri.Properties.MaskSettings.Set("mask", ".");
             this.txtSeri.Size = new System.Drawing.Size(338, 40);
             this.txtSeri.TabIndex = 2;
             // 
@@ -246,9 +243,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtTarih.Location = new System.Drawing.Point(219, 355);
             this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.BeepOnError = false;
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
+            
             this.txtTarih.Size = new System.Drawing.Size(338, 40);
             this.txtTarih.TabIndex = 5;
             // 
@@ -264,10 +259,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtSaat.Location = new System.Drawing.Point(219, 293);
             this.txtSaat.Name = "txtSaat";
-            this.txtSaat.Properties.BeepOnError = false;
-            this.txtSaat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
-            this.txtSaat.Properties.MaskSettings.Set("mask", "\\d?\\d:\\d\\d");
-            this.txtSaat.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            
             this.txtSaat.Size = new System.Drawing.Size(338, 40);
             this.txtSaat.TabIndex = 4;
             // 
@@ -283,10 +275,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtSiraNo.Location = new System.Drawing.Point(219, 235);
             this.txtSiraNo.Name = "txtSiraNo";
-            this.txtSiraNo.Properties.BeepOnError = false;
-            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtSiraNo.Properties.MaskSettings.Set("mask", "100000");
-            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            
             this.txtSiraNo.Size = new System.Drawing.Size(338, 40);
             this.txtSiraNo.TabIndex = 3;
             // 

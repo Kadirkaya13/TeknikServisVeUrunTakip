@@ -29,7 +29,7 @@ namespace TeknikServis.Formlar
                                u.Telefon,
                                u.Mail,
                                Departman = u.Departman1.Ad,
-                              
+
                            };
             gridControl1.DataSource = degerler.ToList();
         }
@@ -89,21 +89,28 @@ namespace TeknikServis.Formlar
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-           
-                
+
+
         }
 
         private void btnUrunKaydet_Click(object sender, EventArgs e)
         {
-            Personel personel = new Personel();
-            personel.Ad = txtPersonelAd.Text;
-            personel.Soyad = txtPersonelSoyad.Text;
-            personel.Mail = txtMail.Text;
-            personel.Telefon = txtTelefon.Text;
-            personel.Departman = byte.Parse(lookUpEdit1.EditValue.ToString());
-            db.Personel.Add(personel);
-            db.SaveChanges();
-            MessageBox.Show("Başarı ile eklendi");
+            if (txtPersonelAd.Text != "" && txtPersonelSoyad.Text != "" && txtMail.Text != "" && txtTelefon.Text != "")
+            {
+                Personel personel = new Personel();
+                personel.Ad = txtPersonelAd.Text;
+                personel.Soyad = txtPersonelSoyad.Text;
+                personel.Mail = txtMail.Text;
+                personel.Telefon = txtTelefon.Text;
+                personel.Departman = byte.Parse(lookUpEdit1.EditValue.ToString());
+                db.Personel.Add(personel);
+                db.SaveChanges();
+                MessageBox.Show("Başarı ile eklendi");
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
 

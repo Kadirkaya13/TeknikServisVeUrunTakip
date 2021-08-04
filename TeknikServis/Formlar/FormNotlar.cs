@@ -18,7 +18,7 @@ namespace TeknikServis.Formlar
         }
         DbTeknikServisEntities db = new DbTeknikServisEntities();
 
-        void OkunanNotlar()
+        void OkunmayanNotlar()
         {
             var degerler = from u in db.Notlar
                            where u.Durum == false
@@ -31,7 +31,7 @@ namespace TeknikServis.Formlar
             gridControl1.DataSource = degerler.ToList();
 
         }
-        void OkunmayanNotlar()
+        void OkunanNotlar()
         {
 
             var degerler = from u in db.Notlar

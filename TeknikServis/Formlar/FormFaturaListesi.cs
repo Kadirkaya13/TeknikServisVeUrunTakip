@@ -25,8 +25,8 @@ namespace TeknikServis.Formlar
                             x.Id,
                             x.Seri,
                             x.SıraNo,
-                            Cari = x.Cariler.Ad +" "+x.Cariler.Soyad,
-                            Personel = x.Personel1.Ad +" "+x.Personel1.Soyad,
+                            Cari = x.Cariler.Ad + " " + x.Cariler.Soyad,
+                            Personel = x.Personel1.Ad + " " + x.Personel1.Soyad,
                             x.VergiDaire,
                             x.Saat,
                             x.Tarih,
@@ -36,21 +36,21 @@ namespace TeknikServis.Formlar
         void CariLookUpEdit()
         {
             lueCari.Properties.DataSource = (from x in db.Cariler
-                                            select new
-                                            {
-                                                x.Id,
-                                                Cari = x.Ad + " " + x.Soyad,
-                                            }).ToList();
+                                             select new
+                                             {
+                                                 x.Id,
+                                                 Cari = x.Ad + " " + x.Soyad,
+                                             }).ToList();
         }
         void PersonelLookUpEdit()
         {
             luePersonel.Properties.DataSource = (from x in db.Personel
-                                            select new
-                                            {
-                                                x.Id,
-                                                Personel = x.Ad + " " + x.Soyad,
-                                                Departman = x.Departman1.Ad,
-                                            }).ToList();
+                                                 select new
+                                                 {
+                                                     x.Id,
+                                                     Personel = x.Ad + " " + x.Soyad,
+                                                     Departman = x.Departman1.Ad,
+                                                 }).ToList();
         }
         private void FormFaturaListesi_Load(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace TeknikServis.Formlar
             FaturaListe();
             PersonelLookUpEdit();
             CariLookUpEdit();
-            
+
 
         }
 
@@ -69,17 +69,24 @@ namespace TeknikServis.Formlar
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            FaturaBilgi faturaBilgi = new FaturaBilgi();
-            faturaBilgi.Seri = txtSeri.Text;
-            faturaBilgi.SıraNo = txtSiraNo.Text;
-            faturaBilgi.Saat = txtSaat.Text;
-            faturaBilgi.Tarih = DateTime.Parse( txtTarih.Text);
-            faturaBilgi.VergiDaire = txtVergiDairesi.Text;
-            faturaBilgi.Cari = byte.Parse(lueCari.EditValue.ToString());
-            faturaBilgi.Personel = byte.Parse(luePersonel.EditValue.ToString());
-            db.FaturaBilgi.Add(faturaBilgi);
-            db.SaveChanges();
-            MessageBox.Show("Fatura Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtSeri.Text != "" && txtSiraNo.Text != "" && txtSaat.Text != "" && txtTarih.Text != "" && txtVergiDairesi.Text != "")
+            {
+                FaturaBilgi faturaBilgi = new FaturaBilgi();
+                faturaBilgi.Seri = txtSeri.Text;
+                faturaBilgi.SıraNo = txtSiraNo.Text;
+                faturaBilgi.Saat = txtSaat.Text;
+                faturaBilgi.Tarih = DateTime.Parse(txtTarih.Text);
+                faturaBilgi.VergiDaire = txtVergiDairesi.Text;
+                faturaBilgi.Cari = byte.Parse(lueCari.EditValue.ToString());
+                faturaBilgi.Personel = byte.Parse(luePersonel.EditValue.ToString());
+                db.FaturaBilgi.Add(faturaBilgi);
+                db.SaveChanges();
+                MessageBox.Show("Fatura Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

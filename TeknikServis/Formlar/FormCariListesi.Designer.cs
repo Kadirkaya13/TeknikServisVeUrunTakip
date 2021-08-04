@@ -193,9 +193,6 @@ namespace TeknikServis.Formlar
             // 
             this.txtTelefon.Location = new System.Drawing.Point(208, 276);
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Properties.BeepOnError = false;
-            this.txtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtTelefon.Properties.MaskSettings.Set("mask", "(\\(\\d\\d\\d\\) )?\\d{1,3}-\\d\\d-\\d\\d");
             this.txtTelefon.Size = new System.Drawing.Size(338, 40);
             this.txtTelefon.TabIndex = 10;
             // 

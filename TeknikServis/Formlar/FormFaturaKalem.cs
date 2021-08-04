@@ -53,15 +53,22 @@ namespace TeknikServis.Formlar
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            FaturaDetay faturaKalem = new FaturaDetay();
-            faturaKalem.FaturaId = int.Parse(txtFaturaId.Text);
-            faturaKalem.Adet = short.Parse(txtAdet.Text);
-            faturaKalem.Fiyat = decimal.Parse(txtFiyat.Text);
-            faturaKalem.Tutar = short.Parse(txtAdet.Text) * decimal.Parse(txtFiyat.Text);
-            faturaKalem.Urun = txtUrun.Text;
-            db.FaturaDetay.Add(faturaKalem);
-            db.SaveChanges();
-            MessageBox.Show("Fatura Detayı Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtFaturaId.Text != "" && txtAdet.Text != "" && txtFiyat.Text != "" && txtAdet.Text != "")
+            {
+                FaturaDetay faturaKalem = new FaturaDetay();
+                faturaKalem.FaturaId = int.Parse(txtFaturaId.Text);
+                faturaKalem.Adet = short.Parse(txtAdet.Text);
+                faturaKalem.Fiyat = decimal.Parse(txtFiyat.Text);
+                faturaKalem.Tutar = short.Parse(txtAdet.Text) * decimal.Parse(txtFiyat.Text);
+                faturaKalem.Urun = txtUrun.Text;
+                db.FaturaDetay.Add(faturaKalem);
+                db.SaveChanges();
+                MessageBox.Show("Fatura Detayı Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
 
