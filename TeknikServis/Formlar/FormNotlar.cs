@@ -89,16 +89,32 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtBaslik.Text = gridView1.GetFocusedRowCellValue("Baslik").ToString();
-            txtIcerik.Text = gridView1.GetFocusedRowCellValue("Icerik").ToString();
+            try
+            {
+                txtId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtBaslik.Text = gridView1.GetFocusedRowCellValue("Baslik").ToString();
+                txtIcerik.Text = gridView1.GetFocusedRowCellValue("Icerik").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void gridView2_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtId.Text = gridView2.GetFocusedRowCellValue("Id").ToString();
-            txtBaslik.Text = gridView2.GetFocusedRowCellValue("Baslik").ToString();
-            txtIcerik.Text = gridView2.GetFocusedRowCellValue("Icerik").ToString();
+            try
+            {
+                txtId.Text = gridView2.GetFocusedRowCellValue("Id").ToString();
+                txtBaslik.Text = gridView2.GetFocusedRowCellValue("Baslik").ToString();
+                txtIcerik.Text = gridView2.GetFocusedRowCellValue("Icerik").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)

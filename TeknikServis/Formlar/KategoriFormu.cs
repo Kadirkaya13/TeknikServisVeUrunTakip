@@ -42,8 +42,16 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtKategoriAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            try
+            {
+                txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtKategoriAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void gridControl1_Click_1(object sender, EventArgs e)
@@ -112,8 +120,16 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged_1(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtKategoriAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            try
+            {
+                txtKategoriId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtKategoriAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)

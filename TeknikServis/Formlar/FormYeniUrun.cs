@@ -18,7 +18,19 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-
+        private void FormYeniUrun_Load(object sender, EventArgs e)
+        {
+            lookUpEditKategoriler();
+        }
+        void lookUpEditKategoriler()
+        {
+            lookUpEdit1.Properties.DataSource = (from x in db.Kategori
+                                                 select new
+                                                 {
+                                                     x.Id,
+                                                     x.Ad
+                                                 }).ToList();
+        }
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
 
@@ -44,10 +56,6 @@ namespace TeknikServis.Formlar
             this.Close();
         }
 
-        private void FormYeniUrun_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
@@ -56,7 +64,7 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            if (txtAd.Text != "" && txtMarka.Text != "" && txtAlısFiyat.Text != "" && txtSatisFiyat.Text != "" && txtStok.Text != ""&&txtKategori.Text!="")
+            if (txtAd.Text != "" && txtMarka.Text != "" && txtAlısFiyat.Text != "" && txtSatisFiyat.Text != "" && txtStok.Text != "")
             {
                 Urun urun = new Urun();
                 urun.Ad = txtAd.Text;
@@ -65,7 +73,7 @@ namespace TeknikServis.Formlar
                 urun.SatisFiyat = Convert.ToDecimal(txtSatisFiyat.Text);
                 urun.Stok = Convert.ToInt16(txtStok.Text);
                 urun.Durum = false;
-                urun.Kategori = byte.Parse(txtKategori.Text);
+                urun.Kategori = byte.Parse(lookUpEdit1.EditValue.ToString());
                 db.Urun.Add(urun);
                 db.SaveChanges();
                 MessageBox.Show("Ürün Başarı ile eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

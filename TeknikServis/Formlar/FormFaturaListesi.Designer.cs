@@ -41,6 +41,7 @@ namespace TeknikServis.Formlar
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.luePersonel = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -53,7 +54,6 @@ namespace TeknikServis.Formlar
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtSiraNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeri.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -136,9 +136,9 @@ namespace TeknikServis.Formlar
             // btnSil
             // 
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(219, 687);
+            this.btnSil.Location = new System.Drawing.Point(390, 686);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(338, 62);
+            this.btnSil.Size = new System.Drawing.Size(167, 62);
             this.btnSil.TabIndex = 10;
             this.btnSil.Text = "Sil";
             // 
@@ -184,7 +184,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(646, 1084);
             this.groupControl1.TabIndex = 17;
-            this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Text = "Fatura Kayıt";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(217, 686);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(167, 62);
+            this.simpleButton2.TabIndex = 39;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // labelControl8
             // 
@@ -285,16 +295,6 @@ namespace TeknikServis.Formlar
             this.labelControl2.Size = new System.Drawing.Size(82, 25);
             this.labelControl2.TabIndex = 23;
             this.labelControl2.Text = "Sıra No :";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(46, 687);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(152, 62);
-            this.simpleButton2.TabIndex = 39;
-            this.simpleButton2.Text = "Temizle";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormFaturaListesi
             // 

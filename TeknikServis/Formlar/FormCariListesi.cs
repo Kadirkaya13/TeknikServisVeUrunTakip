@@ -105,18 +105,27 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtCariId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtCariAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
-            txtCariSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
-            txtTelefon.Text = gridView1.GetFocusedRowCellValue("Telefon").ToString();
-            txtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
-            txtAdres.Text = gridView1.GetFocusedRowCellValue("Adres").ToString();
-            txtIl.Text = gridView1.GetFocusedRowCellValue("Il").ToString();
-            txtIlce.Text = gridView1.GetFocusedRowCellValue("Ilce").ToString();
-            txtBanka.Text = gridView1.GetFocusedRowCellValue("Banka").ToString();
-            txtVergiDairesi.Text = gridView1.GetFocusedRowCellValue("VergiAdresi").ToString();
-            txtVergiNo.Text = gridView1.GetFocusedRowCellValue("VergiNo").ToString();
-            //txtStatu.Text = gridView1.GetFocusedRowCellValue("Statu").ToString();
+            try
+            {
+                txtCariId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtCariAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+                txtCariSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
+                txtTelefon.Text = gridView1.GetFocusedRowCellValue("Telefon").ToString();
+                txtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+                txtAdres.Text = gridView1.GetFocusedRowCellValue("Adres").ToString();
+                txtIl.Text = gridView1.GetFocusedRowCellValue("Il").ToString();
+                txtIlce.Text = gridView1.GetFocusedRowCellValue("Ilce").ToString();
+                txtBanka.Text = gridView1.GetFocusedRowCellValue("Banka").ToString();
+                txtVergiDairesi.Text = gridView1.GetFocusedRowCellValue("VergiAdresi").ToString();
+                txtVergiNo.Text = gridView1.GetFocusedRowCellValue("VergiNo").ToString();
+                txtStatu.Text = gridView1.GetFocusedRowCellValue("Statu").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 

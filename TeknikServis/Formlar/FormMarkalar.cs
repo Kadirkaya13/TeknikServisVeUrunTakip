@@ -38,7 +38,7 @@ namespace TeknikServis.Formlar
             {
                 Marka = z.Key,
                 Toplam = z.Count()
-            }).Select(c => c.Marka).OrderByDescending(x=> x).FirstOrDefault();
+            }).Select(c => c.Marka).OrderBy(x=> x).FirstOrDefault();
 
             var MarkayaGoreUrunSayisi = db.Urun.OrderBy(x => x.Marka).GroupBy(y => y.Marka).Select(z => new
             {
@@ -83,7 +83,7 @@ namespace TeknikServis.Formlar
 
             while (kategoriSqlDataReader.Read())
             {
-                chartControl1.Series["Series 1"].Points.AddPoint(kategoriSqlDataReader[0].ToString(), Convert.ToInt32(kategoriSqlDataReader[1]));
+                chartControl2.Series["Series 1"].Points.AddPoint(kategoriSqlDataReader[0].ToString(), Convert.ToInt32(kategoriSqlDataReader[1]));
             }
             kategoriSqlDataReader.Close();
             sqlConnection.Close();

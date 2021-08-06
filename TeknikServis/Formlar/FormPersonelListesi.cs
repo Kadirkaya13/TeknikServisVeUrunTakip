@@ -121,11 +121,20 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtPersonelId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtPersonelAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
-            txtPersonelSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
-            txtTelefon.Text = gridView1.GetFocusedRowCellValue("Telefon").ToString();
-            txtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+            try
+            {
+                txtPersonelId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtPersonelAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+                txtPersonelSoyad.Text = gridView1.GetFocusedRowCellValue("Soyad").ToString();
+                txtTelefon.Text = gridView1.GetFocusedRowCellValue("Telefon").ToString();
+                txtMail.Text = gridView1.GetFocusedRowCellValue("Mail").ToString();
+                lookUpEdit1.EditValue = gridView1.GetFocusedRowCellValue("Departman").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnUrunSil_Click(object sender, EventArgs e)
@@ -169,6 +178,7 @@ namespace TeknikServis.Formlar
             txtPersonelSoyad.Text = "";
             txtTelefon.Text = "";
             txtMail.Text = "";
+            lookUpEdit1.EditValue = "";
         }
     }
 }

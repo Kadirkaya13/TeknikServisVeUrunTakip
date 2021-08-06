@@ -39,6 +39,7 @@ namespace TeknikServis.Formlar
             this.txtKategoriAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -60,7 +61,6 @@ namespace TeknikServis.Formlar
             this.groupControl10 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtKategoriId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -134,9 +134,9 @@ namespace TeknikServis.Formlar
             // btnUrunSil
             // 
             this.btnUrunSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunSil.ImageOptions.Image")));
-            this.btnUrunSil.Location = new System.Drawing.Point(160, 556);
+            this.btnUrunSil.Location = new System.Drawing.Point(331, 556);
             this.btnUrunSil.Name = "btnUrunSil";
-            this.btnUrunSil.Size = new System.Drawing.Size(338, 65);
+            this.btnUrunSil.Size = new System.Drawing.Size(167, 65);
             this.btnUrunSil.TabIndex = 18;
             this.btnUrunSil.Text = "Sil";
             this.btnUrunSil.Click += new System.EventHandler(this.btnUrunSil_Click);
@@ -182,7 +182,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(564, 1084);
             this.groupControl1.TabIndex = 3;
-            this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Text = "Kategori Kayıt";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(158, 556);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(167, 65);
+            this.simpleButton3.TabIndex = 43;
+            this.simpleButton3.Text = "Temizle";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // pictureEdit1
             // 
@@ -394,16 +404,6 @@ namespace TeknikServis.Formlar
             this.groupControl11.Size = new System.Drawing.Size(265, 247);
             this.groupControl11.TabIndex = 7;
             this.groupControl11.Text = "groupControl11";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(12, 556);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(139, 65);
-            this.simpleButton3.TabIndex = 43;
-            this.simpleButton3.Text = "Temizle";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // KategoriFormu
             // 

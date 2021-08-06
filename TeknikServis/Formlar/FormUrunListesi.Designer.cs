@@ -33,6 +33,7 @@ namespace TeknikServis.formlar
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.txtUrunId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -51,7 +52,6 @@ namespace TeknikServis.formlar
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -115,6 +115,16 @@ namespace TeknikServis.formlar
             this.groupControl1.Text = "Ürün İşlemleri";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(169, 635);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(167, 65);
+            this.simpleButton3.TabIndex = 42;
+            this.simpleButton3.Text = "Temizle";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // txtUrunId
             // 
             this.txtUrunId.Location = new System.Drawing.Point(169, 93);
@@ -133,7 +143,7 @@ namespace TeknikServis.formlar
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(169, 821);
+            this.simpleButton1.Location = new System.Drawing.Point(169, 817);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(338, 65);
             this.simpleButton1.TabIndex = 20;
@@ -143,7 +153,7 @@ namespace TeknikServis.formlar
             // btnUrunGuncelle
             // 
             this.btnUrunGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunGuncelle.ImageOptions.Image")));
-            this.btnUrunGuncelle.Location = new System.Drawing.Point(169, 730);
+            this.btnUrunGuncelle.Location = new System.Drawing.Point(169, 725);
             this.btnUrunGuncelle.Name = "btnUrunGuncelle";
             this.btnUrunGuncelle.Size = new System.Drawing.Size(338, 65);
             this.btnUrunGuncelle.TabIndex = 19;
@@ -153,9 +163,9 @@ namespace TeknikServis.formlar
             // btnUrunSil
             // 
             this.btnUrunSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunSil.ImageOptions.Image")));
-            this.btnUrunSil.Location = new System.Drawing.Point(169, 635);
+            this.btnUrunSil.Location = new System.Drawing.Point(340, 635);
             this.btnUrunSil.Name = "btnUrunSil";
-            this.btnUrunSil.Size = new System.Drawing.Size(338, 65);
+            this.btnUrunSil.Size = new System.Drawing.Size(167, 65);
             this.btnUrunSil.TabIndex = 18;
             this.btnUrunSil.Text = "Sil";
             this.btnUrunSil.Click += new System.EventHandler(this.btnUrunSil_Click);
@@ -265,16 +275,6 @@ namespace TeknikServis.formlar
             this.labelControl1.Size = new System.Drawing.Size(97, 25);
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Ürün Adı :";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(16, 635);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(139, 65);
-            this.simpleButton3.TabIndex = 42;
-            this.simpleButton3.Text = "Temizle";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // FormUrunListesi
             // 

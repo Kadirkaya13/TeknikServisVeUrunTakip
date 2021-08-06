@@ -23,7 +23,7 @@ namespace TeknikServis.Formlar
             lblUrunSayi.Text = db.Urun.Count().ToString();
             lblKategoriSayi.Text = db.Kategori.Count().ToString();
             lblStokSayi.Text = db.Urun.Sum(x => x.Stok).ToString();
-            lblKritSayi.Text = "10";
+            lblKritSayi.Text = "30";
             lblStokTaEnCokUrun.Text = (from x in db.Urun orderby x.Stok descending select x.Ad).FirstOrDefault();
             lblStoktaEnAzUrun.Text = (from x in db.Urun orderby x.Stok ascending select x.Ad).FirstOrDefault();
             lblEnYuksekFiyatliUrun.Text = (from x in db.Urun orderby x.SatisFiyat descending select x.Ad).FirstOrDefault();
@@ -32,6 +32,15 @@ namespace TeknikServis.Formlar
             lblToplamBilgisayar.Text = db.Urun.Count(x=>x.Kategori==1).ToString();
             lblKucukEvaletSayı.Text = db.Urun.Count(x=>x.Kategori==3).ToString();
             lblToplamMarka.Text = (from x in db.Urun select x.Marka).Distinct().Count().ToString();
+            lblToplamStokSayisi.Text = db.Urun.Sum(x => x.Stok).ToString();
+            lblEnCokUrunBulunanKategori.Text = (db.Urun.OrderBy(x => x.Kategori1.Ad).GroupBy(y => y.Kategori1.Ad).Select(z => new
+            {
+                Kategori = z.Key,
+                Toplam = z.Count()
+            }).Select(c => c.Kategori).OrderBy(x => x).FirstOrDefault()).ToString();
+            lblToplamSatilanUrun.Text = db.FaturaDetay.Sum(x => x.Adet).ToString();
+            lblSatilanUrun.Text= db.FaturaDetay.Sum(x => x.Adet).ToString();
+
         }
 
         private void pictureEdit18_EditValueChanged(object sender, EventArgs e)

@@ -49,8 +49,8 @@ namespace TeknikServis.Formlar
             this.txtUrun = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
@@ -163,7 +163,7 @@ namespace TeknikServis.Formlar
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
             this.btnSil.Location = new System.Drawing.Point(146, 607);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(338, 62);
+            this.btnSil.Size = new System.Drawing.Size(167, 62);
             this.btnSil.TabIndex = 10;
             this.btnSil.Text = "Sil";
             // 
@@ -237,8 +237,18 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(646, 1084);
             this.groupControl1.TabIndex = 19;
-            this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Text = "Fatura Kalem Kayıt";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(317, 607);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(167, 62);
+            this.simpleButton2.TabIndex = 38;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -248,16 +258,6 @@ namespace TeknikServis.Formlar
             this.simpleButton1.TabIndex = 30;
             this.simpleButton1.Text = "Tutarı göster";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(496, 607);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(138, 62);
-            this.simpleButton2.TabIndex = 38;
-            this.simpleButton2.Text = "Temizle";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormFaturaKalem
             // 

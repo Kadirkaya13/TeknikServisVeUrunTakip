@@ -57,9 +57,9 @@ namespace TeknikServis.Formlar
             this.txtDepartmanAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -312,9 +312,9 @@ namespace TeknikServis.Formlar
             // btnSil
             // 
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(219, 286);
+            this.btnSil.Location = new System.Drawing.Point(390, 286);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(338, 62);
+            this.btnSil.Size = new System.Drawing.Size(167, 62);
             this.btnSil.TabIndex = 18;
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
@@ -381,7 +381,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(646, 540);
             this.groupControl1.TabIndex = 10;
-            this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Text = "Departman Kayıt";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(219, 286);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(167, 62);
+            this.simpleButton2.TabIndex = 37;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // panel5
             // 
@@ -402,16 +412,6 @@ namespace TeknikServis.Formlar
             this.pictureEdit4.Size = new System.Drawing.Size(646, 544);
             this.pictureEdit4.TabIndex = 0;
             this.pictureEdit4.EditValueChanged += new System.EventHandler(this.pictureEdit4_EditValueChanged);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(32, 286);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(161, 62);
-            this.simpleButton2.TabIndex = 37;
-            this.simpleButton2.Text = "Temizle";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormDepartman
             // 

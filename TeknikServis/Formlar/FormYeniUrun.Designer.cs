@@ -37,7 +37,6 @@ namespace TeknikServis.Formlar
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.txtKategori = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.txtAlısFiyat = new DevExpress.XtraEditors.TextEdit();
@@ -54,6 +53,7 @@ namespace TeknikServis.Formlar
             this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).BeginInit();
@@ -61,7 +61,6 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlısFiyat.Properties)).BeginInit();
@@ -75,6 +74,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -155,19 +155,6 @@ namespace TeknikServis.Formlar
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(300, 3);
             this.panelControl3.TabIndex = 8;
-            // 
-            // txtKategori
-            // 
-            this.txtKategori.EditValue = "Kategori";
-            this.txtKategori.Location = new System.Drawing.Point(174, 459);
-            this.txtKategori.Name = "txtKategori";
-            this.txtKategori.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtKategori.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtKategori.Properties.Appearance.Options.UseBackColor = true;
-            this.txtKategori.Properties.Appearance.Options.UseForeColor = true;
-            this.txtKategori.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtKategori.Size = new System.Drawing.Size(238, 36);
-            this.txtKategori.TabIndex = 7;
             // 
             // pictureEdit3
             // 
@@ -354,6 +341,23 @@ namespace TeknikServis.Formlar
             this.pictureEdit15.TabIndex = 68;
             this.pictureEdit15.Click += new System.EventHandler(this.pictureEdit15_Click);
             // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(174, 450);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.lookUpEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.DisplayMember = "Ad";
+            this.lookUpEdit1.Properties.NullText = "Kategori Seçiniz";
+            this.lookUpEdit1.Properties.ValueMember = "Id";
+            this.lookUpEdit1.Size = new System.Drawing.Size(300, 36);
+            this.lookUpEdit1.TabIndex = 69;
+            // 
             // FormYeniUrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -361,6 +365,7 @@ namespace TeknikServis.Formlar
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(544, 1106);
+            this.Controls.Add(this.lookUpEdit1);
             this.Controls.Add(this.pictureEdit15);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnVazgec);
@@ -377,7 +382,6 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.txtAlısFiyat);
             this.Controls.Add(this.pictureEdit4);
             this.Controls.Add(this.panelControl3);
-            this.Controls.Add(this.txtKategori);
             this.Controls.Add(this.pictureEdit3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
@@ -398,7 +402,6 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlısFiyat.Properties)).EndInit();
@@ -412,6 +415,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,7 +430,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.TextEdit txtKategori;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.TextEdit txtAlısFiyat;
@@ -443,5 +446,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.SimpleButton btnVazgec;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit15;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }

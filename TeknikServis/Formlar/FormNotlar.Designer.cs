@@ -46,6 +46,7 @@ namespace TeknikServis.Formlar
             this.txtBaslik = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.txtIcerik = new DevExpress.XtraEditors.TextEdit();
@@ -53,7 +54,6 @@ namespace TeknikServis.Formlar
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -106,16 +106,16 @@ namespace TeknikServis.Formlar
             // btnSil
             // 
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(210, 600);
+            this.btnSil.Location = new System.Drawing.Point(381, 600);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(338, 44);
+            this.btnSil.Size = new System.Drawing.Size(167, 44);
             this.btnSil.TabIndex = 18;
             this.btnSil.Text = "Sil";
             // 
             // btnKaydet
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(210, 541);
+            this.btnKaydet.Location = new System.Drawing.Point(210, 545);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(338, 44);
             this.btnKaydet.TabIndex = 17;
@@ -195,7 +195,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(646, 1084);
             this.groupControl1.TabIndex = 14;
-            this.groupControl1.Text = "Ürün İşlemleri";
+            this.groupControl1.Text = "Not Kayıt";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(210, 600);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(167, 44);
+            this.simpleButton2.TabIndex = 40;
+            this.simpleButton2.Text = "Temizle";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // pictureEdit1
             // 
@@ -265,16 +275,6 @@ namespace TeknikServis.Formlar
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView2_FocusedRowChanged);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(31, 600);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(152, 44);
-            this.simpleButton2.TabIndex = 40;
-            this.simpleButton2.Text = "Temizle";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FormNotlar
             // 

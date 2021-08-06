@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TeknikServis.formlar
@@ -33,17 +28,21 @@ namespace TeknikServis.formlar
                            };
             gridControl1.DataSource = degerler.ToList();
         }
-        private void FormUrunListesi_Load(object sender, EventArgs e)
+        void lookUpEditKategoriler()
         {
-            //var degerler = db.Urun.ToList();
-            txtUrunId.Enabled = false;
-            UrunListesi();
             lookUpEdit1.Properties.DataSource = (from x in db.Kategori
                                                  select new
                                                  {
                                                      x.Id,
                                                      x.Ad
                                                  }).ToList();
+        }
+        private void FormUrunListesi_Load(object sender, EventArgs e)
+        {
+            //var degerler = db.Urun.ToList();
+            txtUrunId.Enabled = false;
+            UrunListesi();
+            lookUpEditKategoriler();
         }
 
         private void labelControl6_Click(object sender, EventArgs e)
@@ -85,12 +84,23 @@ namespace TeknikServis.formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtUrunId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtUrunAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
-            txtUrunMarka.Text = gridView1.GetFocusedRowCellValue("Marka").ToString();
-            txtUrunAlısFiyat.Text = gridView1.GetFocusedRowCellValue("AlisFiyat").ToString();
-            txtUrunSatisFiyat.Text = gridView1.GetFocusedRowCellValue("SatisFiyat").ToString();
-            txtUrunStok.Text = gridView1.GetFocusedRowCellValue("Stok").ToString();
+            try
+            {
+
+                txtUrunId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtUrunAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+                txtUrunMarka.Text = gridView1.GetFocusedRowCellValue("Marka").ToString();
+                txtUrunAlısFiyat.Text = gridView1.GetFocusedRowCellValue("AlisFiyat").ToString();
+                txtUrunSatisFiyat.Text = gridView1.GetFocusedRowCellValue("SatisFiyat").ToString();
+                txtUrunStok.Text = gridView1.GetFocusedRowCellValue("Stok").ToString();
+                lookUpEdit1.EditValue = gridView1.GetFocusedRowCellValue("Kategori").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : "+ ex ,"Hata !",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
 
         }
 
@@ -141,6 +151,7 @@ namespace TeknikServis.formlar
             txtUrunAlısFiyat.Text = "";
             txtUrunSatisFiyat.Text = "";
             txtUrunStok.Text = "";
+            lookUpEdit1.EditValue = "";
         }
     }
 }

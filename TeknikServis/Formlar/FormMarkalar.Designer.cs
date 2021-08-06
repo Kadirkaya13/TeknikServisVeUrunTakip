@@ -338,6 +338,7 @@ namespace TeknikServis.Formlar
             // 
             this.chartControl1.BorderOptions.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(80)))), ((int)(((byte)(77)))));
             this.chartControl1.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(-1, 130);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.PaletteName = "Civic";
@@ -391,6 +392,7 @@ namespace TeknikServis.Formlar
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl2.Diagram = xyDiagram1;
+            this.chartControl2.Legend.Name = "Default Legend";
             this.chartControl2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.chartControl2.Location = new System.Drawing.Point(-1, 130);
             this.chartControl2.Name = "chartControl2";

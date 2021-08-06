@@ -29,7 +29,7 @@ namespace TeknikServis.Formlar
         }
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            if (txtDepartmanAd.Text!="")
+            if (txtDepartmanAd.Text != "")
             {
                 Departman departman = new Departman();
                 departman.Ad = txtDepartmanAd.Text;
@@ -41,7 +41,7 @@ namespace TeknikServis.Formlar
             {
                 MessageBox.Show("Doldurulmayan Alanları Doldurunuz !", "Uyarı !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
 
         }
 
@@ -90,8 +90,16 @@ namespace TeknikServis.Formlar
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtDepartmanId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
-            txtDepartmanAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            try
+            {
+                txtDepartmanId.Text = gridView1.GetFocusedRowCellValue("Id").ToString();
+                txtDepartmanAd.Text = gridView1.GetFocusedRowCellValue("Ad").ToString();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Hata Oluştu \n Hata : " + ex, "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureEdit4_EditValueChanged(object sender, EventArgs e)
