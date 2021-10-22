@@ -470,6 +470,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\TechnicServiceDataBase.sql" />
     <Content Include="Images\iconlar\icons8_category_80px.png" />
     <Content Include="Images\iconlar\icons8_cheap_2_100px.png" />
     <Content Include="Images\iconlar\icons8_multichannel_80px_1.png" />
